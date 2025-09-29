@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Escape Room</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Digital Escape Room</h1>
+    <div class="meta">
+      <div id="timer">Time: 10:00</div>
+      <div id="progress">Room 1 of 3</div>
+    </div>
+  </header>
+
+  <main class="stage">
+
+    <section class="room active" id="room-1" data-room="1">
+      <h2>Room 1 — The Echo Riddle</h2>
+      <p class="hint-text">Solve the riddle to unlock the next door.</p>
+      <div class="card">
+        <p class="riddle">I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?</p>
+        <div class="controls">
+          <input id="answer1" placeholder="Type your answer" autocomplete="off" />
+          <button id="submit1">Unlock</button>
+          <button class="hint" data-room="1">Hint (-30s)</button>
+        </div>
+        <p class="feedback" id="feedback1"></p>
+      </div>
+    </section>
+
+ 
+    <section class="room" id="room-2" data-room="2">
+      <h2>Room 2 — The Constellation Lock</h2>
+      <p class="hint-text">Tap the constellations in the correct order to proceed.</p>
+      <div class="card">
+        <div class="sequence" id="tiles">
+          <button class="tile" data-symbol="⭐">⭐</button>
+          <button class="tile" data-symbol="🌸">🌸</button>
+          <button class="tile" data-symbol="🚀">🚀</button>
+          <button class="tile" data-symbol="🔥">🔥</button>
+          <button class="tile" data-symbol="⚽">⚽</button>
+        </div>
+
+        <div class="controls">
+          <div id="seqDisplay" class="seq-display">Sequence: —</div>
+          <button id="clearSeq">Clear</button>
+          <button id="submit2">Unlock</button>
+          <button class="hint" data-room="2">Hint (-30s)</button>
+        </div>
+        <p class="feedback" id="feedback2"></p>
+      </div>
+    </section>
+
+  
+    <section class="room" id="room-3" data-room="3">
+      <h2>Room 3 — The Final Anagram</h2>
+      <p class="hint-text">Unscramble the letters to reveal the escape word.</p>
+      <div class="card">
+        <p class="scrambled" id="scrambled">R K A E P</p>
+        <div class="controls">
+          <input id="answer3" placeholder="Your guess" autocomplete="off" />
+          <button id="submit3">Unlock</button>
+          <button class="hint" data-room="3">Hint (-30s)</button>
+        </div>
+        <p class="feedback" id="feedback3"></p>
+      </div>
+    </section>
+
+  
+    <section class="room" id="room-4" data-room="4">
+      <h2>Freedom!</h2>
+      <div class="card final">
+        <p>You've escaped. Nice work.</p>
+        <button id="restart">Play Again</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="controls-bar">
+    <div>Attempts left: <span id="attempts">6</span></div>
+    <button id="reset">Reset Room</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
