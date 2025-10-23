@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: repeating-linear-gradient(
+        0deg,
+        white 0%,
+        white 50%,
+        black 50%,
+        black 100%,
+
+    ),
+    repeating-linear-gradient(90deg,#aaa 0%, red 50%, red 50%,#555 100%) ;
+    background-size: 30px 30px;
+    background-blend-mode: difference;
+    cursor: grab;
+}
+
+span{
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #333 ;
+    pointer-events: none;
+    border-radius: 50%;
+    background: url("https://images.pexels.com/photos/33411903/pexels-photo-33411903.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
