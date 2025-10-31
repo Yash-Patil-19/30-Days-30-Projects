@@ -9,5 +9,5 @@ function updateScrollIndicator(){
 }
 
 window.addEventListener("scroll",updateScrollIndicator);
-
+// Initial call to set the indicator on page load
 updateScrollIndicator();
