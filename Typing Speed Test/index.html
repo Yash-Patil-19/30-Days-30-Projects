@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Typing Speed Test</h1>
+      <p class="subtitle">Practice, track, and improve — live WPM, accuracy, and errors.</p>
+    </header>
+
+    <section class="card test-card">
+      <div id="quote" class="quote" aria-live="polite"></div>
+
+      <textarea id="input" class="input" placeholder="Start typing here..." aria-label="Typing input"></textarea>
+
+      <div class="controls">
+        <button id="startBtn" class="btn">Start</button>
+        <button id="resetBtn" class="btn ghost">Reset</button>
+        <select id="timeSelect" aria-label="Select test duration">
+          <option value="15">15s</option>
+          <option value="30" selected>30s</option>
+          <option value="60">60s</option>
+        </select>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-label">Time</div>
+          <div id="time" class="stat-value">00:30</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">WPM</div>
+          <div id="wpm" class="stat-value">0</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Accuracy</div>
+          <div id="accuracy" class="stat-value">100%</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Errors</div>
+          <div id="errors" class="stat-value">0</div>
+        </div>
+      </div>
+
+      <div class="footer-row">
+        <div class="progress-wrap">
+          <div id="progress" class="progress"></div>
+        </div>
+        <div class="best">Best WPM: <span id="best">-</span></div>
+      </div>
+    </section>
+
+    <section class="card tips">
+      <h2>Tips</h2>
+      <ul>
+        <li>Use the Start button, then begin typing the text above.</li>
+        <li>WPM is calculated as (characters / 5) / minutes.</li>
+        <li>Your best WPM is stored locally in your browser.</li>
+      </ul>
+    </section>
+
+    <footer class="footer">Made with HTML, CSS, and JavaScript • Good luck!</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
