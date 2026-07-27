@@ -4,7 +4,9 @@
 
 ### **One Idea. One Day. One Project.**
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&duration=3500&pause=1000&color=00D9FF&center=true&vCenter=true&width=850&lines=Welcome+to+30+Days+30+Projects!;Building+Real-World+Projects+Every+Day.;Learning+By+Building.;Consistency+Creates+Mastery.;Code.+Create.+Repeat.🚀" alt="Typing SVG"/>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=28&duration=3500&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=🚀+Welcome+to+30+Days+30+Projects!;💻+Building+Real-World+Projects+Every+Day.;🔥+Learning+By+Building.;⚡+Consistency+Creates+Mastery.;❤️+Code.+Create.+Repeat." alt="Typing SVG" />
+</p>
 
 <p align="center">
 
